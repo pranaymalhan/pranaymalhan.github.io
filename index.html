@@ -4,101 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Portfolio</title>
 </head>
 <body>
-    <div class="main">
-        <div class="top">
-            <h1>Pranay Malhan</h1>
-            <h2>Data Engineer</h2>
-            <a href="https://www.linkedin.com/in/pranay-malhan/"><img src="./assets/images/linkedin-icon.png" alt="linkedin icon" class="icon"></a>
-        </div>
-        <div class="profile">
-            <h3>Profile</h3>
-            <hr/>
-            <ul>
-                <li>
-                    Highly experienced data engineer with over 4 years of proven track record in constructing and developing
-                    cloud data processing systems.
-                </li>
-                <li>
-                    Implemented significant data solutions, resulting in measurable business value and efficient data
-                    operations.
-                </li>
-                <li>
-                    Currently, helping Oportun make financial health effortless for everyone.
-                </li>
-            </ul>
-        </div>
-        <div class="employment">
-            <h3>Employement</h3>
-            <hr/>
-            <div id="employment1">
-                <div class="gist">
-                    <h4 class="emp-info" id="role">Data Engineer</h4>
-                    <h4 class="emp-info" id="company">Oportun</h4>
-                    <h4 class="emp-info" id="tenure">Aug 2022 - Present</h4>
-                </div>
-                <ul>
-                    <li>Working as a Data Engineer in Personal loan and Credit Card business segments of organization.</li>
-                    <li>Migrated multiple legacy processes to Databricks for leveraging lakehouse architecture.</li>
-                    <li>Migrated SQL procedures from legacy to current database by defining query and attribute mapping, saving
-$50k for organization.</li>
-                    <li>Implemented data orchestration using Airflow to manage dependency among multiple AWS Glue jobs.</li>
-                    <li>Automated Jenkins monitoring process using webhook URL for sending jobs status to slack.</li>
-                    <li>Created multiple queries for vendor report generation on large datasets in Redshift.</li>
-                    <li>Leveraged Athena in Jenkins jobs for s3 data processing.</li>
-                </ul>
-            </div>
-            <div id="employment2">
-                <div class="gist">
-                    <h4 class="emp-info" id="role">Systems Engineer</h4>
-                    <h4 class="emp-info" id="company">Tata Consultancy Services</h4>
-                    <h4 class="emp-info" id="tenure">Sep 2020 – Aug 2022</h4>
-                </div>
-                <ul>
-                    <li>Worked in Data Engineering role for Pharmaceutical Client</li>
-                    <li>Developed data solutions using PySpark in Databricks which efficiently processed TBs of data</li>
-                    <li>Wrote complex T-SQL queries and stored procedures in MS SQL Server for data analysis</li>
-                    <li>Created end-to-end fully automated data pipelines using Azure data factory and ADLS.</li>
-                </ul>
+    <div class="container">
+        <nav class="navbar d-flex justify-content-left py-3">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#employment" class="nav-link">Employment</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li class="nav-item"><a href="./assets/resume/resume.pdf" target="_blank" class="nav-link">PDF</a></li>
+          </ul>
+        </nav>
+
+        <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4 rounded-circle" src="./assets/images/image-self.jpg" alt="" width="200" height="200">
+            <h1 class="display-5 fw-bold text-body-emphasis">I'm Pranay</h1>
+            <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">A data engineer focused on building reliable, scalable and amazing data pipelines and infrastructures.</p>
             </div>
         </div>
-        <div class="education">
-            <h3>Education</h3>
-            <hr/>
-            <div id="education1">
-                <div class="gist">
-                    <h4>Ghaziabad, UP</h4>
-                    <h4>Ajay Kumar Garg Engineering College</h4>
-                    <h4>Aug 2016 – Sep 2020</h4>
+
+        <div class="px-4 py-5 my-5" id="employment">
+            <h2 class="pb-2">Employment</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 mb-3 ">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3 text-center">
+                    <h3 class="my-0 fw-normal">Oportun</h3>
                 </div>
-                <ul>
-                    <li>B. Tech in Computer Science and Engineering with 8.83 CGPA.</li>
-                    <li>Coursework: Databases, Algorithms, Programming Languages.</li>
+                <div class="card-body">
+                    <h5 class="text-center">Aug 2022 - Present</h5>
+                    <ul class="list-styled mt-3 mb-4">
+                    <li>Data Engineer in Personal loan and Credit Card business</li>
+                    <li>Migrated multiple legacy processes to Databricks</li>
+                    <li>Implemented data orchestration using Airflow</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 text-center">
+                    <h3 class="my-0 fw-normal">Tata Consultancy Services</h3>
+                    </div>
+                    <div class="card-body">
+                    <h5 class="text-center">Sep 2020 – Aug 2022</h5>
+                    <ul class="list-styled mt-3 mb-4">
+                        <li>Data Engineer for Pharmaceutical Client</li>
+                        <li>Developed data solutions using PySpark in Databricks</li>
+                        <li>Created end-to-end data pipelines using Azure data factory</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        
+        </div>
+
+        <div class="px-4 py-5 my-5" id="skills">
+            <h2 class="pb-2">Skills</h2>
+            <div class="row g-4  row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <h3 class="fs-4">Languages</h3>
+                <ul class="list-styled mt-3 mb-4">
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>PySpark</li>
                 </ul>
             </div>
+            <div class="feature col">
+                <h3 class="fs-4">Tools</h3>
+                <ul class="list-styled mt-3 mb-4">
+                    <li>Databricks</li>
+                    <li>Airflow</li>
+                    <li>Athena</li>
+                </ul>
+            </div>
+            <div class="feature col">
+                <h3 class="fs-4">Cloud knowledge</h3>
+                <ul class="list-styled mt-3 mb-4">
+                    <li>Glue & ADF</li>
+                    <li>Redshift & Synapse</li>
+                    <li>s3 & ADLS</li>
+                </ul>
+            </div>
+            </div>
         </div>
-        <div class="accolades">
-            <h3>ADDITIONAL EXPERIENCE AND AWARDS</h3>
-            <hr/>
-            <ul>
-                <li>Azure DP-203 certified</li>
-                <li>Knight (Top 5%) on Leetcode</li>
-                <li>Astronomer Airflow Fundamentals certified</li>
+
+        <div class="px-4 py-5 my-5" id="achievements">
+            <h2 class="pb-2">Achievements</h2>
+            <div class="row g-4  row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <ul class="list-styled mt-3 mb-4">
+                        <li>Azure DP-203 certified</li>
+                        <li>Knight (Top 5%) on Leetcode</li>
+                        <li>Astronomer Airflow Fundamentals certified</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-primary">Thanks for visiting!!! For more details -> </span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a href="https://www.linkedin.com/in/pranay-malhan/"><img src="./assets/images/linkedin-icon.png" alt="linkedin icon" class="icon"></a></li>
+              <li class="ms-3"><a href="https://leetcode.com/u/orp1745/"><img src="./assets/images/leetcode-icon.png" alt="leetcode icon" class="icon"></a></li>
+              <li class="ms-3"><a href="https://github.com/pranaymalhan/"><img src="./assets/images/github-icon.png" alt="github icon" class="icon"></a></li>
             </ul>
-        </div>
-        <div class="tech-stack">
-            <h3>LANGUAGES AND TOOLS</h3>
-            <hr/>
-            <ul>
-                <li>Python, SQL, PySpark</li>
-                <li>Databricks</li>
-                <li>AWS (Glue, S3, Redshift, Athena)</li>
-                <li>Azure (Data factory, ADLS)</li>
-                <li>Airflow</li>
-            </ul>
-        </div>
+        </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
 </html>
